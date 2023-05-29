@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đóng góp ý kiến</title>
+    <link rel="shortcut icon" href="https://scontent-hkg4-1.xx.fbcdn.net/v/t39.30808-6/349996706_785104546475801_7910188458160986768_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=dbeb18&_nc_ohc=kUZBxrDgtekAX_St9xd&_nc_ht=scontent-hkg4-1.xx&oh=00_AfBNlhb7NSnbbsncvc52bhFYcwSQ8ldsLYLVgvX8BnXcFA&oe=6478AC14" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        :root {
+            --bg-color: #222327;
+            --text-color: #fff;
+            --main-color: red;
+        }
+
+        body {
+            min-height: 100vh;
+            background: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contact-container {
+            background-color: var(--text-color);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .contact {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .contact i {
+            color: var(--main-color);
+            font-size: 28px;
+            margin-right: 3px;
+        }
+
+        .contact span {
+            color: var(--bg-color);
+            font-size: 1.7rem;
+            font-weight: 600;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            display: flex;
+        }ion-icon{
+            margin: 14px 8px 14px 0;
+          font-size: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--text-color);
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--main-color);
+        }
+
+        .form-group button {
+            width: 100%;
+            padding: 8px;
+            background-color: var(--main-color);
+            border: none;
+            border-radius: 4px;
+            color: var(--text-color);
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-group button:hover {background-color: var(--main-color);
+        }
+        @media (max-width: 600px) {
+            .register-container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contact-container">
+        <div class="contact">
+            <i class="ri-contacts-book-fill"></i>
+         <span><a style="color:#222327;" href="Trang tin.html">Đóng góp ý kiến</a></span>
+        </div>
+        <form>
+            <div class="form-group">
+                <ion-icon style="color:var(--main-color)" name="person-outline"></ion-icon>
+                <input type="text" placeholder="Nhập họ và tên">
+            </div>
+            <div class="form-group">
+                <ion-icon style="color:var(--main-color)" name="mail-outline"></ion-icon>
+                <input type="email" placeholder=" Email">
+            </div><div class="form-group">
+            <ion-icon style="color:var(--main-color)" name="call-outline"></ion-icon>
+            <input type="text" placeholder="Số điện thoại">
+            </div>
+            <div class="form-group">
+                <ion-icon style="color:var(--main-color)" name="clipboard-outline"></ion-icon>
+                <textarea id="message" placeholder="Nhập nội ý kiến của bạn"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Gửi phản hồi</button>
+            </div>
+        </form>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
