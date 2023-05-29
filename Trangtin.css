@@ -1,0 +1,469 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --bg-color: #222327;
+    --text-color: #fff;
+    --main-color: red;
+
+}
+
+body {
+    min-height: 100vh;
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 28px 12%;
+    transition: all .50s ease;
+    background-color: var(--bg-color);
+}
+
+.Logo {
+    display: flex;
+    align-items: center;
+}
+.Logo span:hover{
+    color: var(--main-color);
+}
+.Logo span {
+    color: var(--text-color);
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.navbar a {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0px 30px;
+    transition: all .50s ease;
+}
+
+.navbar a:hover {
+    color: var(--main-color);
+}
+
+.navbar a:active {
+    color: var(--main-color);
+
+}
+
+.main {
+    display: flex;
+    align-items: center;
+}
+
+.main a {
+    margin-right: 25px;
+    margin-left: 10px;
+    color: var(--text-color-);
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all .50s ease;
+}
+
+.main a:hover {
+    color: var(--main-color);
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.user {
+    color: var(--main-color);
+    font-size: 28px;
+    margin-right: 7px;
+}
+
+#menu-icon {
+    font-size: 35px;
+    color: var(--text-color);
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+#search-icon {
+    font-size: 24px;
+    color: var(--text-color);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+#search-icon:hover{
+    color: var(--main-color);
+}
+#search-bar {
+    width: 0;
+    height: 40px;
+    background: transparent;
+    border: none;
+    border-bottom: 0px solid var(--text-color);
+    color: var(--text-color);
+    padding: 0 10px;
+    transition: width 0.3s ease-in-out;
+}
+
+#search-bar:focus {
+    outline: none;
+    width: 100px;
+}
+.search.open #search-bar {
+    width: 100px;
+}
+.noidung{
+    float: left;
+    margin-top: 130px;
+    margin-left: 90px;
+    margin-right: 20px;
+    width: 60%;
+    height: auto;
+    line-height: 30px;
+    border-color: var(--text-color);
+    border-style: solid;
+    border-radius: 4px;
+    color:var(--text-color);
+   }
+.noidung p{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.noidung h4{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.noidung img{
+    margin: 10px 20px;
+    width:90%;
+}
+.noidung2 h3{
+    color: var(--text-color);
+}
+.noidung2{
+    margin-top: 130px;
+    float: left;
+    padding: 40px 40px;
+    width: 20%;
+    height: auto;
+    border-color: var(--text-color);
+    border-style: solid;
+    border-radius: 4px;
+    color:var(--text-color);
+    position: sticky;
+    top:20px;
+   }
+   
+   .video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 50%;
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  .back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 45px;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    z-index: 999;
+    transition: opacity 0.3s;
+}
+.back-to-top i{
+    font-size: 40px;
+}
+.back-to-top:hover {
+    opacity: 0.8;
+}
+.Topgame1{
+    margin-top: 30px;
+    padding: 15px 10px;
+    background: url(https://img2.wallspic.com/attachments/originals/8/5/9/0/20958-gears_of_war-darkness-video_games-pc_game-game-3840x2400.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 24px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+   }
+.Topgame2{
+    margin-top: 30px;
+    padding: 15px 10px;
+    background: url(https://wallpapercave.com/wp/wp8450475.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 24px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+   }
+.Topgame3{
+    margin-top: 30px;
+    padding: 15px 10px;
+    background: url(https://images.ctfassets.net/usf1vwtuqyxm/5DIhpKUsxSjdNUnosbvqy7/ded32d8c59c7338083b444ca73872a8c/hogwarts-legacy-desktop.jpg?fm=jpg&q=70&w=2560);
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 24px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+   }
+.Topgame4{
+    margin-top: 30px;
+    padding: 15px 10px;
+    background: url(https://i.pinimg.com/736x/45/7b/3c/457b3c6dcdbdb548aecc54ba744acc28.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 24px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+   }
+.Topgame5{
+    margin-top: 30px;
+    padding: 15px 10px;
+    background: url(https://digistatement.com/wp-content/uploads/2022/07/Polygonium.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 24px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+   }
+   .footer {
+    display: block;
+    float: left;
+    width: 100%;
+    height: auto;
+    margin-top: 130px;
+    padding-bottom: 30px;
+    position: relative;
+    color: var(--text-color);
+    background-color: #333;
+}
+
+.footer-header {
+    width: 100%;
+    height: auto;
+    padding: 20px 0px 10px 50px;
+}
+
+ul {
+    list-style: none;
+    margin-right: 50px;
+}
+
+.footer2 {
+    display: flex;
+    padding: 10px;
+    font-size: 13px;
+    margin-left: 30px;
+}
+.social-media {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-right: 40px;
+  }
+  
+  .social-media a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    border-radius: 50%;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease;
+  }
+  
+  .social-media a:hover {
+    background-color: var(--main-color);
+  }
+  
+  .social-media i {
+    font-size: 24px;
+  }
+  
+   @media (max-width:1310px) {
+    header {
+        padding: 14px 2%;
+        transition: .2s;
+    }
+    .navbar a {
+        padding: 5px 0px;
+        margin: 0px 20px;
+    }
+    .noidung{
+      padding-top: 50px;
+    
+    }
+    .footer2{
+      flex-direction: column;
+    }
+}
+
+@media (max-width:940px) {
+    #menu-icon {
+        display: block;
+    }
+    .main a{
+        font-size: 15px;
+        margin-right: 15px;
+        margin-left: 5px;
+        font-weight: 300;
+
+    }
+    .navbar {
+        position: absolute;
+        top: 120%;
+        right: -110%;
+        width: 250px;
+        height: auto;
+        background: var(--bg-color);
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 10px;
+        transition: all .50s ease;
+    }
+
+    .navbar a {
+        display: block;
+        margin: 12px 0;
+        padding: 0px 20px;
+        transition: all .50s ease;
+    }
+
+    .navbar a:hover {
+        color: var(--text-color);
+        transform: translateY(5px);
+    }
+
+    .navbar a.active {
+        color: var(--text-color);
+    }
+
+    .navbar.open {
+        right: -5%;
+    }
+
+    .navbar li {
+        margin: 12px 0;
+    }
+
+    .navbar li.search {
+        position: relative;
+    }
+
+    #search-icon {
+        position: absolute;
+        top: 50%;
+        left: 5px;
+        transform: translateY(-50%);
+        font-size: 24px;
+        color: var(--text-color);
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    #search-bar {
+        width: 100%;
+        height: 40px;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid var(--text-color);
+        color: var(--text-color);
+        padding: 0 40px 0 30px;
+        transition: width 0.3s ease-in-out;
+    }
+
+    #search-bar:focus {
+        outline: none;
+        width: calc(100% - 70px);
+    }
+    .noidung {
+        width: 100%;
+        margin: 20px 0;
+        border: none;
+    }
+    .noidung a{
+        margin:20px 20px 25px 300px;
+    }
+    .noidung2 {
+        width: 100%;
+        margin-bottom: 20px;
+        border: none;
+    }
+    .footer2 {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-header{
+        padding-left: 20px;
+        padding-right: 20px
+    }
+    .footer {
+        padding: 20px 0;
+      }
+    
+      .social-media {
+        position: static;
+        margin-top: 20px;
+         }
+
+}
