@@ -119,9 +119,7 @@ header {
     border: none;
     cursor: pointer;
 }
-#search-icon:hover{
-    color: var(--main-color);
-}
+
 #search-bar {
     width: 0;
     height: 40px;
@@ -277,11 +275,20 @@ li {
     right: 10px;
 }
 
-iframe {
+.video-container {
+    position: relative;
     width: 100%;
-    height: 500px;
-    margin: 20px auto 5px auto;
-}
+    padding-bottom: 56.25%; 
+    height: 0;
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 
 .btn {
     padding: 10px 10px;
@@ -373,6 +380,7 @@ iframe {
     padding: 20px 0px 10px 50px;
 }
 
+
 ul {
     list-style: none;
     margin-right: 50px;
@@ -460,15 +468,14 @@ html{
     }
 
     .nguon a {
-        font-size: 12px;
+        font-size: 11px;
     }
 
 
     iframe {
         width: 100%;
         height: auto;
-        margin: 20px 0;
-        ;
+        margin: 20px 0;;
     }
 
     .footer-header1 {
@@ -477,6 +484,9 @@ html{
 
     .menu {
         display: none;
+    }.noidung {
+        width: 100%;
+        margin: 80px 0;
     }
 }
 
@@ -498,7 +508,7 @@ html{
         top: 120%;
         right: -110%;
         width: 250px;
-        height: auto;
+        height: 60vh;
         background: var(--bg-color);
         flex-direction: column;
         justify-content: flex-start;
@@ -534,6 +544,7 @@ html{
     .navbar li.search {
         position: relative;
     }
+
     #search-icon {
         position: absolute;
         top: 50%;
@@ -587,7 +598,7 @@ html{
     .social-media {
         position: static;
         margin-top: 20px;
-         }
+    }
 }
 
 @media only screen and (max-width: 376px) {
