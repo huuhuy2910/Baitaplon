@@ -161,7 +161,6 @@ header {
     display: flex;
     padding: 0px 133px;
     position: relative;
-
 }
 
 #banner .box-left,
@@ -213,7 +212,7 @@ header {
 .tintuc {
     width: 90%;
     height: auto;
-    margin-top: 50px;
+    margin-top: 50px; 
     margin-left: 100px;
 }
 
